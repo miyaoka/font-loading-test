@@ -8,21 +8,21 @@ export default Vue.extend({
   props: {
     family: {
       type: String,
-      default: ''
+      default: '',
     },
     weight: {
       type: String,
-      default: '400'
-    }
+      default: '400',
+    },
   },
   computed: {
     style(): Record<string, string> {
       return {
         fontFamily: `'${this.family}'`,
-        fontWeight: this.weight
+        fontWeight: this.weight,
       }
-    }
-  }
+    },
+  },
 })
 </script>
 
